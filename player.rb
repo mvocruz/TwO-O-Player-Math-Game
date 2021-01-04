@@ -1,16 +1,12 @@
-class player
+class Player
 
-  attr_accessor :name, :lives, :score
+  attr_accessor :name, :lives
 
   def initialize(name)
     @name = name
     @lives = 3
-    @score = 0
+   
   end
-
-  def correct
-    @score += 1
-  end 
 
   def incorrect
     @lives -= 1
